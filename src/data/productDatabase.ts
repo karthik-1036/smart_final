@@ -71,6 +71,78 @@ export const productDatabase = {
         camera: '50MP + 48MP + 32MP'
       },
       tags: ['premium', 'performance', 'gaming', 'value']
-    }
+    },
+    {
+      id: 'samsung-s24-ultra',
+      title: 'Samsung Galaxy S24 Ultra',
+      description: 'Ultimate Android flagship with S Pen and AI features',
+      image: 'https://images.unsplash.com/photo-1707227155046-274521394970',
+      category: 'smartphones',
+      amazonPrice: 129999,
+      flipkartPrice: 128999,
+      amazonLink: 'https://amzn.to/s24ultra',
+      flipkartLink: 'https://flip.kart/s24ultra',
+      features: [
+        'Snapdragon 8 Gen 3',
+        'S Pen included',
+        '200MP camera system',
+        '6.8" QHD+ display'
+      ],
+      specs: {
+        processor: 'Snapdragon 8 Gen 3',
+        ram: '12GB',
+        storage: '256GB',
+        camera: '200MP + 12MP + 10MP + 10MP'
+      },
+      tags: ['premium', 'photography', 'gaming', 'business']
+    },
+    {
+      id: 'samsung-s24-ultra',
+      title: 'Samsung Galaxy S24 Ultra',
+      description: 'Ultimate Android flagship with S Pen and AI features',
+      image: 'https://images.unsplash.com/photo-1707227155046-274521394970',
+      category: 'smartphones',
+      amazonPrice: 129999,
+      flipkartPrice: 128999,
+      amazonLink: 'https://amzn.to/s24ultra',
+      flipkartLink: 'https://flip.kart/s24ultra',
+      features: [
+        'Snapdragon 8 Gen 3',
+        'S Pen included',
+        '200MP camera system',
+        '6.8" QHD+ display'
+      ],
+      specs: {
+        processor: 'Snapdragon 8 Gen 3',
+        ram: '12GB',
+        storage: '256GB',
+        camera: '200MP + 12MP + 10MP + 10MP'
+      },
+      tags: ['premium', 'photography', 'gaming', 'business']
+    },
+    {
+      id: 'samsung-s24-ultra',
+      title: 'Samsung Galaxy S24 Ultra',
+      description: 'Ultimate Android flagship with S Pen and AI features',
+      image: 'https://images.unsplash.com/photo-1707227155046-274521394970',
+      category: 'smartphones',
+      amazonPrice: 129999,
+      flipkartPrice: 128999,
+      amazonLink: 'https://amzn.to/s24ultra',
+      flipkartLink: 'https://flip.kart/s24ultra',
+      features: [
+        'Snapdragon 8 Gen 3',
+        'S Pen included',
+        '200MP camera system',
+        '6.8" QHD+ display'
+      ],
+      specs: {
+        processor: 'Snapdragon 8 Gen 3',
+        ram: '12GB',
+        storage: '256GB',
+        camera: '200MP + 12MP + 10MP + 10MP'
+      },
+      tags: ['premium', 'photography', 'gaming', 'business']
+    },
   ]
 };
