@@ -1,4 +1,4 @@
-import React from 'react';
+
 import { Bot, Search, Sparkles } from 'lucide-react';
 
 export default function LoadingState() {

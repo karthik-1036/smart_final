@@ -1,4 +1,3 @@
-import React from 'react';
 import { Brain, Target, Sparkles, Scale } from 'lucide-react';
 
 const features = [

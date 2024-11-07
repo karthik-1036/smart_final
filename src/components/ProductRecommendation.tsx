@@ -1,4 +1,4 @@
-import React from 'react';
+
 import { ShoppingCart, ExternalLink, ThumbsUp, Package, Star, Check, Info } from 'lucide-react';
 import type { Recommendation } from '../types';
 
