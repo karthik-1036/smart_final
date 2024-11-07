@@ -6,7 +6,7 @@ export default function Header() {
 
   return (
     <header className="bg-white shadow-md">
-      <nav className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+      <nav className="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
         <a href="/" className="text-3xl font-bold text-blue-600 hover:text-blue-800 transition duration-300">SmartPiece</a>
 
         {/* Desktop Navigation */}
