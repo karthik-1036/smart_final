@@ -1,4 +1,3 @@
-
 import { ShoppingCart, ExternalLink, ThumbsUp, Package, Star, Check, Info } from 'lucide-react';
 import type { Recommendation } from '../types';
 
@@ -8,8 +7,6 @@ interface Props {
 
 export default function ProductRecommendation({ recommendation }: Props) {
   const { product, matchScore, reasoning } = recommendation;
-  // const bestPrice = Math.min(product.amazonPrice, product.flipkartPrice);
-  // const priceDiff = Math.abs(product.amazonPrice - product.flipkartPrice);
   
   return (
     <div className="bg-white rounded-xl shadow-xl overflow-hidden w-full">
@@ -24,7 +21,7 @@ export default function ProductRecommendation({ recommendation }: Props) {
       </div>
       
       <div className="lg:flex">
-        <div className="lg:w-1/3 relative aspect-[4/3] lg:aspect-auto">
+        <div className="lg:w-1/3 relative aspect-w-4 aspect-h-3 lg:aspect-w-3 lg:aspect-h-4">
           <img
             className="w-full h-full object-cover"
             src={product.image}
@@ -74,49 +71,41 @@ export default function ProductRecommendation({ recommendation }: Props) {
           
           <div className="bg-gray-50 rounded-lg p-6">
             <div className="flex items-center justify-between mb-4">
-              {/* <div>
-                <p className="text-sm text-gray-600 mb-1">Best Available Price</p>
-                <p className="text-3xl font-bold text-gray-900">₹{bestPrice.toLocaleString()}</p>
-              </div>
-              {priceDiff > 0 && (
-                <div className="bg-green-100 text-green-800 px-3 py-1 rounded-full">
-                  Save ₹{priceDiff.toLocaleString()}
-                </div> */}
+              {/* Price section removed for brevity */}
             </div>
             
             <div className="space-y-3">
               <a
-                href={product.amazonLink}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-center justify-between px-6 py-3 bg-gradient-to-r from-orange-500 to-orange-400 text-white rounded-lg hover:from-orange-600 hover:to-orange-500 transition-all duration-200"
-              >
-                <div className="flex items-center">
-                  <ShoppingCart className="w-5 h-5 mr-2" />
-                  <span className="font-medium">Buy on Amazon</span>
-                </div>
-                <div className="flex items-center">
-                  {/* <span className="font-medium">₹{product.amazonPrice.toLocaleString()}</span> */}
-                  <ExternalLink className="w-4 h-4 ml-2" />
-                </div>
-              </a>
-              
-              <a
-                href={product.flipkartLink}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-center justify-between px-6 py-3 bg-gradient-to-r from-indigo-500 to-indigo-400 text-white rounded-lg hover:from-indigo-600 hover:to-indigo-500 transition-all duration-200"
-              >
-                <div className="flex items-center">
-                  <ShoppingCart className="w-5 h-5 mr-2" />
-                  <span className="font-medium">Buy on Flipkart</span>
-                </div>
-                <div className="flex items-center">
-                  {/* <span className="font-medium">₹{product.flipkartPrice.toLocaleString()}</span> */}
-                  <ExternalLink className="w-4 h-4 ml-2" />
-                </div>
-              </a>
-            </div>
+               href={product.amazonLink}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center justify-center px-6 py-3 bg-gradient-to-r from-orange-500 to-orange-400 text-white rounded-lg hover:from-orange-600 hover:to-orange-500 transition-all duration-200"
+  >
+            <div className="flex items-center">
+            <ShoppingCart className="w-5 h-5 mr-2" />
+            <span className="font-medium">Buy on Amazon</span>
+    </div>
+    <div className="flex items-center">
+      <ExternalLink className="w-4 h-4 ml-2" />
+    </div>
+  </a>
+
+  <a
+    href={product.flipkartLink}
+    target="_blank"
+    rel="noopener noreferrer"
+    className="flex items-center justify-center px-6 py-3 bg-gradient-to-r from-indigo-500 to-indigo-400 text-white rounded-lg hover:from-indigo-600 hover:to-indigo-500 transition-all duration-200"
+  >
+    <div className="flex items-center">
+      <ShoppingCart className="w-5 h-5 mr-2" />
+      <span className="font-medium">Buy on Flipkart</span>
+    </div>
+    <div className="flex items-center">
+      <ExternalLink className="w-4 h-4 ml-2" />
+    </div>
+  </a>
+</div>
+
           </div>
         </div>
       </div>
